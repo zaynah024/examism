@@ -15,49 +15,80 @@
   </head>
   <body>
       <!--header Starts here -->
-        <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/examism-logo.svg" alt="logo" class="img-fluid" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Rewards</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Our Products</a>
-                    </li>
-                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        More
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">FAQs</a></li>
-                        <li><a class="dropdown-item" href="#">About Us</a></li>
-                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                      </ul>
-                    </li>
-                  
-                  </ul>
-                <ul class="navbar-nav">
-                         <li class="nav-item m-0">
-                          <a class="nav-link pink-btn" aria-current="page" href="#">Agent Portal <i class="bi bi-chevron-right"></i></a>
-                        </li>
-                    </ul>
-                </div>
-              </div>
-            </nav>
-        </header>
-         <!--header Ends here -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="images/examism-logo.svg" alt="logo" class="img-fluid"
+          /></a>
+           
+          <div class="d-flex align-items-center gap-3">
+            <a id="agent-btn" class="nav-link pink-btn  d-block d-md-none small py-1" aria-current="page" href="#"
+            >Agent Portal <i class="bi bi-chevron-right"></i
+          ></a>
+        
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="testimonial.html"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="rewards.html">Rewards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="our-products.html"
+                  >Our Products</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                  <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item m-0">
+                <a class="nav-link pink-btn" aria-current="page" href="#"
+                  >Agent Portal <i class="bi bi-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--header Ends here -->
       
       
       
@@ -70,134 +101,227 @@
                   <div class="row">
                       <div class="col-lg-12">
                             <div class="heading text-center">
-                                <h2>Our Products</h2>
+                                <p class="display-3 fw-bold">Our Products</p>
                                 <p class="small-heading mt-4">We offer vouchers for a number of different exams</p>
                           </div>
                       </div>
                   </div>
-                  <div class="row mt-5">
-                      <div class="col-lg-12">
-                            <h3 class="small-heading-products">Pearson Vouchers</h3>
-                            <p class="small-text-products">Authentic and Reliable</p>
+                  <div class="d-flex flex-wrap gap-4  justify-content-center mx-auto">
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/peana-academy.svg"   alt="">
                       </div>
+                      <div class="">
+                        <p class="mb-2">Pearson PTE Core</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/cisco.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">Cisco</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/alfa.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">Alfa</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/apeuni.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">APEUNI</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/aws.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">AWS</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/cisa.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">CISA</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/cism.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">CISM</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/comptia.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">Comptia</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/duolingo.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">Duolingo</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/fortinet.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">Fortinet</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/gre.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">GRE</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/itil.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">ITIL</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/juniper.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">JUNIPER</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/peoplecert.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">PEOPLE CERT</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/splunk.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">SPLUNK</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/togaf.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">TOGAF</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/vlueprism.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">BLUEPRISM</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="our-product-border d-flex gap-3 align-items-center  p-2 radius-5   ">
+                      <div class="">
+                        <img src="images/out-products/vwmare.png"  alt="">
+                      </div>
+                      <div class="">
+                        <p class="mb-2">VMWARE</p>
+                        <button class="btn btn-outline-dark radius-5 ">
+                          Order Now
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6">
-                        <div class="flex-container flex-wrap">
-                            <div class="flex-icon">
-                                <img src="images/duolink-product.svg" alt="img" class="img-fluid"/>
-                            </div>
-                            <div class="flex-text">
-                                <h3>Pearson PTE Core</h3>
-                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-                                <p class="mb-0"><strong>30% OFF</strong></p>
-                            </div>
-                             <div class="flex-btn">
-                                <a class="pink-btn d-block text-center" href="">Order Now</a>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="flex-container flex-wrap">
-                            <div class="flex-icon">
-                                <img src="images/duolink-product.svg" alt="img" class="img-fluid"/>
-                            </div>
-                            <div class="flex-text">
-                                <h3>Pearson PTE Core</h3>
-                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-                                <p class="mb-0"><strong>30% OFF</strong></p>
-                            </div>
-                            <div class="flex-btn">
-                                <a class="pink-btn d-block text-center" href="">Order Now</a>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="flex-container flex-wrap">
-                            <div class="flex-icon">
-                                <img src="images/duolink-product.svg" alt="img" class="img-fluid"/>
-                            </div>
-                            <div class="flex-text">
-                                <h3>Pearson PTE Core</h3>
-                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-                                <p class="mb-0"><strong>30% OFF</strong></p>
-                            </div>
-                            <div class="flex-btn">
-                                <a class="pink-btn d-block text-center" href="">Order Now</a>
-                            </div>
-                         </div>
-                      </div>
-                  </div>
-                     <div class="row mt-5">
-                      <div class="col-lg-12">
-                            <h3 class="small-heading-products">ApeUni Vouchers</h3>
-                            <p class="small-text-products">Authentic and Reliable</p>
-                      </div>
-                  </div>
-                  <div class="row mb-3">
-                     <div class="col-lg-4 col-md-6">
-                        <div class="flex-container flex-wrap">
-                            <div class="flex-icon">
-                                <img src="images/duolink-product.svg" alt="img" class="img-fluid"/>
-                            </div>
-                            <div class="flex-text">
-                                <h3>Pearson PTE Core</h3>
-                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-                                <p class="mb-0"><strong>30% OFF</strong></p>
-                            </div>
-                             <div class="flex-btn">
-                                <a class="pink-btn d-block text-center" href="">Order Now</a>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="flex-container flex-wrap">
-                            <div class="flex-icon">
-                                <img src="images/duolink-product.svg" alt="img" class="img-fluid"/>
-                            </div>
-                            <div class="flex-text">
-                                <h3>Pearson PTE Core</h3>
-                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-                                <p class="mb-0"><strong>30% OFF</strong></p>
-                            </div>
-                            <div class="flex-btn">
-                                <a class="pink-btn d-block text-center" href="">Order Now</a>
-                            </div>
-                         </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6">
-                        <div class="flex-container flex-wrap">
-                            <div class="flex-icon">
-                                <img src="images/duolink-product.svg" alt="img" class="img-fluid"/>
-                            </div>
-                            <div class="flex-text">
-                                <h3>Pearson PTE Core</h3>
-                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-                                <p class="mb-0"><strong>30% OFF</strong></p>
-                            </div>
-                             <div class="flex-btn">
-                                <a class="pink-btn d-block text-center" href="">Order Now</a>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-6">
-                        <div class="flex-container flex-wrap">
-                            <div class="flex-icon">
-                                <img src="images/duolink-product.svg" alt="img" class="img-fluid"/>
-                            </div>
-                            <div class="flex-text">
-                                <h3>Pearson PTE Core</h3>
-                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
-                                <p class="mb-0"><strong>30% OFF</strong></p>
-                            </div>
-                            <div class="flex-btn">
-                                <a class="pink-btn d-block text-center" href="">Order Now</a>
-                            </div>
-                         </div>
-                      </div>
-                  </div>
+                  
+                  
+                   
+                 
+                  
               </div>
           </section>
           
