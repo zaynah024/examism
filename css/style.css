@@ -1576,7 +1576,10 @@ footer
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
+  .about-examism-section .flags .flex-box {
+    flex-basis: 22%;
+  }
 }
 
 .radius-5 {
@@ -1590,11 +1593,21 @@ footer
 }
 
 .our-product-border {
-  border: 1px solid rgba(222, 226, 231, 0.60);
+  border: 1px solid rgba(222, 226, 231, 0.6);
 }
 .our-product-btn {
-    background-color: transparent;
-  border: 1px solid rgba(222, 226, 231, 0.60);
+  background-color: transparent;
+  border: 1px solid rgba(222, 226, 231, 0.6);
   border-radius: 1rem;
+}
 
+.our-product-btn {
+  border: 1px solid black;
+  border-radius: 10rem;
+  padding: 0.5rem 1rem;
+}
+.our-product-btn:hover {
+  background-color: #cf3da6;
+  color: white;
+  border: 1px solid #cf3da6;
 }

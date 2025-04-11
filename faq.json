@@ -1,0 +1,28 @@
+{
+    "faqs": [
+      {
+        "question": "What is the meaning of Lorem ipsum?",
+        "answer": "The Lorem Ipsum text is used to fill spaces designated to host texts that have not yet been published. They use programmers, graphic designers, typographers to get a real impression of the digital / advertising / editorial product they are working on."
+      },
+      {
+        "question": "What are the origins of Lorem Ipsum Dolor Sit?",
+        "answer": "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow."
+      },
+      {
+        "question": "What is the most used version?",
+        "answer": "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow."
+      },
+      {
+        "question": "What is the purpose of using Lorem ipsum?",
+        "answer": "The Lorem Ipsum text is used to fill spaces designated to host texts that have not yet been published. They use programmers, graphic designers, typographers to get a real impression of the digital / advertising / editorial product they are working on."
+      },
+      {
+        "question": "How can I customize Lorem Ipsum text?",
+        "answer": "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow."
+      },
+      {
+        "question": "Is Lorem Ipsum used globally?",
+        "answer": "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow."
+      }
+    ]
+  }

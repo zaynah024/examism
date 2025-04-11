@@ -1,0 +1,76 @@
+{
+    "products": [
+      {
+        "text": "Pearson PTE",
+        "image": "images/peana-academy.svg"
+      },
+      {
+        "text": "Cisco",
+        "image": "images/out-products/cisco.svg"
+      },
+      {
+        "text": "Alfa",
+        "image": "images/out-products/alfa.svg"
+      },
+      {
+        "text": "APEUNI",
+        "image": "images/out-products/apeuni.svg"
+      },
+      {
+        "text": "AWS",
+        "image": "images/out-products/aws.svg"
+      },
+      {
+        "text": "CISA",
+        "image": "images/out-products/cisa.svg"
+      },
+      {
+        "text": "CISM",
+        "image": "images/out-products/cism.svg"
+      },
+      {
+        "text": "Comptia",
+        "image": "images/out-products/comptia.svg"
+      },
+      {
+        "text": "Duolingo",
+        "image": "images/out-products/dulingo.svg"
+      },
+      {
+        "text": "Fortinet",
+        "image": "images/out-products/fortnier.svg"
+      },
+      {
+        "text": "GRE",
+        "image": "images/out-products/gree.svg"
+      },
+      {
+        "text": "ITIL",
+        "image": "images/out-products/itil.svg"
+      },
+      {
+        "text": "JUNIPER",
+        "image": "images/out-products/juniper.svg"
+      },
+      {
+        "text": "PEOPLE CERT",
+        "image": "images/out-products/peoplecart.svg"
+      },
+      {
+        "text": "SPLUNK",
+        "image": "images/out-products/splunk.svg"
+      },
+      {
+        "text": "TOGAF",
+        "image": "images/out-products/togaf.svg"
+      },
+      {
+        "text": "BLUEPRISM",
+        "image": "images/out-products/bluesprim.svg"
+      },
+      {
+        "text": "VMWARE",
+        "image": "images/out-products/vmware.svg"
+      }
+    ]
+  }
