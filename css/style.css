@@ -751,57 +751,7 @@ footer .purple-btn:hover {
 .contact-form-footer .purple-btn {
   border-radius: 0;
 }
-footer {
-  padding-top: 70px;
-}
-footer h3 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #1e272f;
-  margin-bottom: 20px;
-}
-footer .links {
-  padding: 0;
-  list-style: none;
-  margin: 0;
-}
-footer .links li {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 10px 0;
-  width: 50%;
-  float: left;
-}
-footer .links li a {
-  color: #1e272f;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 26px;
-}
-footer .btn-row a {
-  display: block;
-  margin-bottom: 20px;
-}
-.form-control {
-  border-radius: 8px;
-}
-footer
-  .input-group:not(.has-validation)
-  > .dropdown-toggle:nth-last-child(n + 3),
-.input-group:not(.has-validation)
-  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-footer
-  .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
-    .valid-feedback
-  ):not(.invalid-tooltip):not(.invalid-feedback) {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  margin-left: 20px;
-}
+
 .testimonial-video-sec {
   position: relative;
   overflow: hidden;
@@ -1610,4 +1560,368 @@ footer
   background-color: #cf3da6;
   color: white;
   border: 1px solid #cf3da6;
+}
+
+
+
+/* ---------------------------------- */
+        /* Footer Styles */
+        /* ---------------------------------- */
+        .custom-footer {
+            background-color: #ffffff; /* Matching body background */
+            padding-top: 60px;
+            padding-bottom: 30px;
+            margin-top: 60px; /* Space above footer */
+            border-top: 1px solid #eee; /* Optional separator line */
+        }
+        
+        .footer-heading {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #000;
+        }
+
+        .footer-link {
+            color: #6c757d;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: #CF3DA6;
+        }
+        
+        /* Social Icons and Subscription */
+.social-icon-btn {
+  background-color: #8236C8;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  transition: opacity 0.2s;
+  border: none;
+  text-decoration: none;
+}
+
+.social-icon-btn:hover {
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
+}
+
+        
+        .subscribe-input {
+            border-radius: 8px 0 0 8px; /* Rounded left only */
+            border-right: none;
+            height: 40px;
+        }
+        
+        .subscribe-btn {
+            background-color: #8236C8; /* Specific purple color */
+            border-color: #8236C8;
+            border-radius: 0 8px 8px 0; /* Rounded right only */
+            height: 40px;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #6a2a9e; /* Darker purple on hover */
+            border-color: #6a2a9e;
+        }
+        
+        /* App Store Images (Placeholder alignment) */
+        .app-link img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 991.98px) {
+            .custom-navbar-wrapper {
+                min-height: auto; 
+                border-radius: 15px; 
+                padding: 0 15px;
+            }
+            .navbar-collapse {
+                background-color: #fff;
+                margin: 0 -15px;
+                padding: 10px 15px;
+                border-top: 1px solid #eee;
+            }
+            .navbar-nav .nav-link {
+                padding: 0.5rem 0;
+            }
+            .signup-link, .agent-btn {
+                margin: 0.5rem 0;
+            }
+            /* New content responsiveness */
+            .voucher-card {
+                max-width: 100%;
+                height: auto;
+            }
+            .card-btn {
+                /* w-100 is used in HTML for full width on mobile */
+            }
+            /* Footer adjustments for mobile */
+            .custom-footer .row > div {
+                margin-bottom: 30px;
+            }
+            .footer-copyright {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        .white-icon {
+  color: #fff;
+}
+
+
+
+/* --- Microanimations --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDelay {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* --- Animation Classes --- */
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeInDelay 1.2s ease forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 1s ease forwards;
+}
+
+.animate-pop {
+  display: inline-block;
+  animation: pop 1.1s ease forwards;
+  transition: transform 0.2s ease;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* --- Hover interactions --- */
+.pink-btn:hover {
+  transform: scale(1.05);
+}
+
+.pink-btn i {
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.pink-btn:hover i {
+  transform: translateX(4px);
+}
+
+
+
+/* --- Base Animations --- */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* --- Animation Classes --- */
+.animate-up {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* --- Staggered Delay for Sequential Reveal --- */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+/* --- Section Styling Tweaks --- */
+.voucharse-section .flex-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.voucharse-section .flex-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* --- Base Animations --- */
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseHeart {
+  0%, 100% { transform: scale(1); color: #ff5b8d; }
+  50% { transform: scale(1.2); color: #ff8cb3; }
+}
+
+@keyframes fadeUpLogo {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Animation Classes --- */
+.animate-fade-down {
+  opacity: 0;
+  animation: fadeDown 1s ease forwards;
+}
+
+.animate-pulse {
+  display: inline-block;
+  animation: pulseHeart 1.8s ease-in-out infinite;
+}
+
+.animate-logo {
+  opacity: 0;
+  animation: fadeUpLogo 0.8s ease forwards;
+}
+
+/* --- Sequential Delay --- */
+.delay-0 { animation-delay: 0.2s; }
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.5s; }
+.delay-4 { animation-delay: 0.6s; }
+.delay-5 { animation-delay: 0.7s; }
+.delay-6 { animation-delay: 0.8s; }
+.delay-7 { animation-delay: 0.9s; }
+
+/* --- Layout + Hover Effects --- */
+.logo-holder ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-holder li {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-holder li:hover {
+  transform: scale(1.08);
+  filter: brightness(1.15);
+}
+
+.logo-section h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.logo-section {
+  padding: 80px 0;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+
+/* Floating image animation */
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Wobble for icons */
+.wobble {
+  animation: wobble 2.5s infinite ease-in-out;
+}
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+}
+
+/* Gentle pulse for icons */
+.pulse img {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.9; }
+}
+
+/* Float-up effect */
+.float-up {
+  animation: floatUp 4s ease-in-out infinite;
+}
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hover bounce for buttons */
+.hover-bounce:hover {
+  transform: translateY(-4px) scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Hover lift for reward cards */
+.hover-lift {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
