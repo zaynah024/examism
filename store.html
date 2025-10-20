@@ -22,120 +22,154 @@
       padding-top: 20px;
     }
 
-   
-    /* HERO SECTION */
-    .hero-container {
-      position: relative;
-      width: 1320px;
-      height: 385px;
-      margin: 60px auto 0 auto;
-      background-image: url('images/herobg.png');  
-      background-size: cover;
-      background-position: center;
-      border-radius: 30px;
-      opacity: 1;
-      overflow: hidden;
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding-left: 60px;
-    }
+   /* HERO SECTION */
+.hero-container {
+  position: relative;
+  width: 1320px;
+  height: 385px;
+  margin: 60px auto 0 auto;
+  background-image: url('images/herobg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  opacity: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
 
-    .hero-content {
-      margin-top: 55px;
-      max-width: 600px;
-    }
+.hero-content {
+  margin-top: 55px;
+  max-width: 600px;
+}
 
-    .hero-title {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 57.12px;
-      margin-bottom: 10px;
-    }
+.hero-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 57.12px;
+  margin-bottom: 10px;
+}
 
-    .hero-title .highlight {
-      color: #CF3DA6;
-    }
+.hero-title .highlight {
+  color: #CF3DA6;
+}
 
-    .hero-subtitle {
-      font-weight: 700;
-      font-size: 47.6px;
-      line-height: 57.12px;
-      margin-bottom: 30px;
-    }
+.hero-subtitle {
+  font-weight: 700;
+  font-size: 47.6px;
+  line-height: 57.12px;
+  margin-bottom: 30px;
+}
 
-    .hero-subtitle .highlight {
-      color: #CF3DA6;
-    }
+.hero-subtitle .highlight {
+  color: #CF3DA6;
+}
 
-    .hero-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #CF3DA6;
-      color: #fff;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      border: none;
-      border-radius: 50px;
-      padding: 15px 35px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(207, 61, 166, 0.3);
-      transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    }
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CF3DA6;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 35px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(207, 61, 166, 0.3);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .hero-btn:hover {
-      background-color: #A040A5;
-      box-shadow: 0 6px 15px rgba(207, 61, 166, 0.5);
-      color: #fff;
-    }
+.hero-btn:hover {
+  background-color: #A040A5;
+  box-shadow: 0 6px 15px rgba(207, 61, 166, 0.5);
+  color: #fff;
+}
 
-    .hero-btn i {
-      margin-left: 10px;
-      font-size: 1em;
-    }
+.hero-btn i {
+  margin-left: 10px;
+  font-size: 1em;
+}
 
-    @media (max-width: 991.98px) {
-      .custom-navbar-wrapper {
-        border-radius: 15px;
-        padding: 0 15px;
-      }
-      .navbar-collapse {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #fff;
-        margin: 0 -15px;
-        padding: 10px 15px;
-        border-top: 1px solid #eee;
-      }
-      .navbar-nav {
-        width: 100%;
-        margin: 0;
-      }
-      .navbar-nav .nav-link {
-        padding: 0.5rem 0;
-      }
-      .signup-link,
-      .agent-btn {
-        margin: 0.5rem 0;
-      }
+/* ========================= */
+/* 🔹 Tablet Responsiveness  */
+/* ========================= */
+@media (max-width: 991.98px) {
+  .hero-container {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: left;
+  }
 
-      .hero-container {
-        width: 100%;
-        height: auto;
-        margin-top: 80px;
-        padding: 40px 20px;
-        text-align: left;
-      }
-      .hero-content {
-        margin-top: 0;
-      }
-      .hero-subtitle {
-        font-size: 32px;
-        line-height: 42px;
-      }
-    }
+  .hero-content {
+    margin-top: 0;
+    max-width: 90%;
+  }
+
+  .hero-subtitle {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .hero-title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+/* ========================= */
+/* 🔹 Mobile Responsiveness  */
+/* ========================= */
+@media (max-width: 575.98px) {
+  .hero-container {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+    padding: 40px 20px;
+    border-radius: 18px;
+    background-image: none;           /* Remove background image */
+    background-color: #FFE6F3;        /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;               /* Center align text */
+  }
+
+  .hero-content {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .hero-btn i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+}
+
 /* ---------------------------------- */
 /* FULL-WIDTH REPEATING BRAND STRIP */
 /* ---------------------------------- */
@@ -678,25 +712,78 @@
             font-size: 1.25rem;
         }
 
+.brand-strip {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 30px 0;
+}
+
+.brand-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+/* Smooth continuous scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-logo {
+  height: 60px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Optional fading edges for smoother entry/exit */
+.brand-strip::before,
+.brand-strip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brand-strip::before {
+  left: 0;
+  background: linear-gradient(to right, #fff 0%, transparent 100%);
+}
+
+.brand-strip::after {
+  right: 0;
+  background: linear-gradient(to left, #fff 0%, transparent 100%);
+}
 
 
   </style>
 </head>
 <body>
   <div class="container">
-    <!--header Starts here -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="images/out-products/logo.svg" alt="logo" class="img-fluid"
-          /></a>
-           
-          <div class="d-flex align-items-center gap-3">
-            <a id="agent-btn" class="nav-link pink-btn  d-block d-md-none small py-1" aria-current="page" href="#"
-            >Agent Portal <i class="bi bi-chevron-right"></i
-          ></a>
-        
+   <!--header Starts here -->
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/out-products/logo.svg" alt="logo" class="img-fluid" />
+      </a>
+
+      <!-- Mobile Menu Toggle -->
       <button
         class="navbar-toggler"
         type="button"
@@ -708,63 +795,59 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-          </div>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="testimonial.html"
-                  >Testimonials</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="rewards.html">Rewards</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="our-products.html"
-                  >Our Products</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="store.html"
-                  >Student Store</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
-                  <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
-                  <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
 
-                </ul>
-              </li>
+      <!-- Nav Menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="testimonial.html">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="store.html">Student Store</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+              <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+              <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
             </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item m-0">
-                <a class="nav-link pink-btn" aria-current="page" href="#"
-                  >Agent Portal <i class="bi bi-chevron-right"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!--header Ends here -->
+          </li>
+
+          <!-- Agent Portal (visible only inside hamburger on mobile) -->
+          <li class="nav-item d-lg-none mt-2">
+            <a class="nav-link pink-btn small py-1" href="#">
+              Agent Portal <i class="bi bi-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Agent Portal (Desktop only) -->
+        <ul class="navbar-nav d-none d-lg-flex">
+          <li class="nav-item m-0">
+            <a class="nav-link pink-btn" aria-current="page" href="#">
+              Agent Portal <i class="bi bi-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--header Ends here -->
+
+
 
     <!-- ✅ HERO SECTION -->
     <div class="hero-container">
@@ -783,21 +866,22 @@
     </div>
   </div>
 
- <!-- ✅ BRAND LOGO STRIP (FULL WIDTH, REPEATING) -->
+ <!-- ✅ BRAND LOGO STRIP (INFINITE SCROLL) -->
 <div class="brand-strip">
   <div class="brand-track">
-    <!-- You can replace these images with your own 4 brand logos -->
-    <img src="images/logo1.svg" alt="Brand 1" class="brand-logo">
-    <img src="images/logo2.svg" alt="Brand 2" class="brand-logo">
-    <img src="images/logo3.svg" alt="Brand 3" class="brand-logo">
-    <img src="images/logo4.svg" alt="Brand 4" class="brand-logo">
+    <img src="images/logo1.svg" alt="Brand 1" class="brand-logo" />
+    <img src="images/logo2.svg" alt="Brand 2" class="brand-logo" />
+    <img src="images/logo3.svg" alt="Brand 3" class="brand-logo" />
+    <img src="images/logo4.svg" alt="Brand 4" class="brand-logo" />
 
-    <!-- Repeat again to fill the full width seamlessly -->
-    <img src="images/logo1.svg" alt="Brand 1" class="brand-logo">
-    <img src="images/logo2.svg" alt="Brand 2" class="brand-logo">
-    <img src="images/logo3.svg" alt="Brand 3" class="brand-logo">
-    <img src="images/logo4.svg" alt="Brand 4" class="brand-logo">
+    <!-- Duplicate for smooth infinite scroll -->
+    <img src="images/logo1.svg" alt="Brand 1" class="brand-logo" />
+    <img src="images/logo2.svg" alt="Brand 2" class="brand-logo" />
+    <img src="images/logo3.svg" alt="Brand 3" class="brand-logo" />
+    <img src="images/logo4.svg" alt="Brand 4" class="brand-logo" />
   </div>
+</div>
+
 </div>
 
 <!-- ✅ MODERN GRADIENT SEARCH BAR -->

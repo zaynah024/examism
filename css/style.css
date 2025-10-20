@@ -150,6 +150,23 @@ p {
   z-index: 2;
   background: #ffffff;
 }
+/* Remove border, outline, and focus glow from hamburger menu */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Also remove the blue outline when clicked/focused */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 .voucharse-section {
   position: relative;
   padding: 70px 0;
@@ -289,6 +306,7 @@ p {
 .our-feature-section .flex-container {
   margin-top: 45px;
 }
+
 
 .our-services {
   background: #f9f8fe;
@@ -1477,7 +1495,7 @@ footer
   .our-services .flex-container {
     text-align: center;
   }
-  .our-services .icon {
+  .our_services .icon {
     display: inline-block;
     margin-bottom: 17px;
   }
@@ -1646,6 +1664,84 @@ footer
             margin-bottom: 10px;
         }
 
+        /* ---------------------------------- */
+/* Mobile Footer Layout */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+    .custom-footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    /* About Us & Product side by side or stacked */
+    .col-6.col-md-3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* App store buttons in one row centered */
+    .col-6.col-md-3:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .app-link img {
+        max-width: 120px;
+        margin: 0;
+    }
+
+    /* Subscription input + button in one row */
+    .col-6.col-md-3:nth-child(4) .input-group {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .subscribe-input {
+        flex: 1;
+        min-width: 0;
+        border-radius: 8px 0 0 8px;
+        border-right: none;
+        height: 40px;
+    }
+
+    .subscribe-btn {
+        border-radius: 0 8px 8px 0;
+        height: 40px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Social icons in one row */
+    .col-6.col-md-3:nth-child(4) .social-icon-btn {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-link img {
+        max-width: 100px;
+    }
+
+    .social-icon-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .subscribe-input,
+    .subscribe-btn {
+        height: 35px;
+    }
+}
+
+
         /* Responsive Adjustments */
         @media (max-width: 991.98px) {
             .custom-navbar-wrapper {
@@ -1686,6 +1782,122 @@ footer
   color: #fff;
 }
 
+
+/* ---------------------------------- */
+/* Responsive Footer - Fully Fixed */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+  .custom-footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  /* Force all footer sections to stack vertically */
+  .custom-footer .row.justify-content-center {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Make each section full width */
+  .custom-footer .col-6.col-md-3,
+  .custom-footer .footer-col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* App links side by side */
+  .custom-footer .app-links {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .custom-footer .app-links img {
+    max-width: 130px !important;
+  }
+
+  /* Widen email input on mobile */
+  .custom-footer .subscribe-col .input-group {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 95% !important;           /* widen input on mobile */
+    max-width: 450px !important;     /* limit so it doesn’t overflow */
+    margin: 0 auto 20px auto !important;
+    gap: 6px !important;
+  }
+
+  .custom-footer .subscribe-input {
+    flex: 1 !important;
+    height: 46px !important;
+    border-radius: 8px 0 0 8px !important;
+    border-right: none !important;
+    font-size: 0.95rem !important;
+    padding: 0 10px !important;
+  }
+
+  .custom-footer .subscribe-btn {
+    height: 46px !important;
+    border-radius: 0 8px 8px 0 !important;
+    padding: 0 18px !important;
+  }
+
+  /* Keep social icons in a single horizontal line */
+  .custom-footer .social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important; /* no wrapping */
+    gap: 14px !important;
+    width: 100% !important;
+    overflow-x: auto; /* safety if screen too small */
+  }
+
+  .custom-footer .social-icon-btn {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1rem !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Center copyright */
+  .custom-footer .footer-copyright {
+    text-align: center !important;
+    margin-top: 15px !important;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  .custom-footer .app-links img {
+    max-width: 110px !important;
+  }
+
+  .custom-footer .subscribe-col .input-group {
+    width: 100% !important;
+    max-width: 480px !important;
+  }
+
+  .custom-footer .subscribe-input,
+  .custom-footer .subscribe-btn {
+    height: 42px !important;
+  }
+
+  .custom-footer .social-icon-btn {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 0.9rem !important;
+  }
+}
 
 
 /* --- Microanimations --- */
@@ -1824,6 +2036,11 @@ footer
   animation: pulseHeart 1.8s ease-in-out infinite;
 }
 
+@media (max-width: 576px) {
+  .bi-heart-fill {
+    font-size: 0.95rem; /* smaller size for mobile */
+  }
+}
 .animate-logo {
   opacity: 0;
   animation: fadeUpLogo 0.8s ease forwards;
@@ -1925,3 +2142,246 @@ footer
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(250px * 16); /* Adjust width based on logo count */
+  animation: scroll 25s linear infinite;
+}
+
+.logo-list {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-list li {
+  list-style: none;
+  flex: 0 0 auto;
+}
+
+.logo-list img {
+  max-height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.logo-list img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: subtle fade on edges */
+.logo-slider::before,
+.logo-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-slider::before {
+  left: 0;
+  background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+.logo-slider::after {
+  right: 0;
+  background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
+/* Contact "Follow Us" — force icons in one row and tidy spacing */
+.contact-form-footer .social-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contact-form-footer .social-icon li {
+  display: block;
+  margin: 0;
+}
+.contact-form-footer .social-icon img,
+.contact-form-footer .social-icon > li > a > img {
+  width: 36px;
+  height: auto;
+  display: block;
+}
+
+/* Footer subscribe input — make it wider and responsive */
+.custom-footer .input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 520px; /* keeps a sensible max width on large screens */
+  margin: 0;
+}
+.custom-footer .subscribe-input {
+  flex: 1 1 auto;
+  min-width: 0; /* prevents overflow in flex container */
+}
+.custom-footer .subscribe-btn {
+  flex: 0 0 auto;
+}
+
+/* Contact-form (page) — ensure contact email/name inputs use full width on small screens */
+@media (max-width: 991.98px) {
+  .contact-form-footer .form-control {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact-form-footer .flex-container.flex-wrap {
+    gap: 12px;
+  }
+}
+
+/* Slightly smaller icons on very small devices */
+@media (max-width: 480px) {
+  .contact-form-footer .social-icon img {
+    width: 30px;
+  }
+  .custom-footer .input-group {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}
+
+
+   /* FORCE overrides for footer on mobile */
+      @media (max-width: 768px) {
+        /* make footer columns stack and be full width */
+        .custom-footer > .container > .row.justify-content-center {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+        .custom-footer > .container > .row.justify-content-center > .col-6.col-md-3 {
+          max-width: 100% !important;
+          flex: 0 0 100% !important;
+          width: 100% !important;
+          text-align: center !important;
+          margin-bottom: 16px !important;
+          padding-left: 12px !important;
+          padding-right: 12px !important;
+        }
+
+        /* widen subscribe input & center the group */
+        .custom-footer .subscribe-col .input-group {
+          display: flex !important;
+          width: 96% !important;
+          max-width: 720px !important;
+          margin: 0 auto 12px !important;
+          gap: 8px !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+        .custom-footer .subscribe-col .input-group .subscribe-input {
+          flex: 1 1 auto !important;
+          min-width: 0 !important;
+          width: 100% !important;
+          padding: 10px 12px !important;
+          height: 46px !important;
+        }
+        .custom-footer .subscribe-col .input-group .subscribe-btn {
+          flex: 0 0 auto !important;
+          height: 46px !important;
+          padding: 0 14px !important;
+        }
+
+        /* force social icons into a single non-wrapping row */
+        .custom-footer .social-icons-row,
+        .custom-footer .social-icons {
+          display: flex !important;
+          flex-wrap: nowrap !important;
+          gap: 10px !important;
+          justify-content: center !important;
+          align-items: center !important;
+          overflow-x: auto !important;
+          padding: 6px 8px !important;
+          width: 100% !important;
+        }
+        .custom-footer .social-icons-row .social-icon-btn,
+        .custom-footer .social-icons .social-icon-btn {
+          flex: 0 0 auto !important;
+          margin: 0 6px !important;
+          width: 40px !important;
+          height: 40px !important;
+        }
+      }
+
+      /* extra safety: ensure desktop layout unchanged */
+      @media (min-width: 769px) {
+        .custom-footer .subscribe-col .input-group { max-width: 520px; }
+      }
+
+
+      /* our-feature-section — smaller sizes and 2-per-row on mobile */
+      @media (max-width: 767.98px) {
+        .our-feature-section .flex-container {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          gap: 0px !important;
+          margin-top: 20px !important;
+          justify-content: center;
+        }
+      
+        .our-feature-section .flex-container .flex-box {
+          flex: 0 0 50% !important; /* two items per row */
+          box-sizing: border-box !important;
+          padding: 10px !important;
+          text-align: center !important;
+          margin: 0 !important;
+        }
+      
+        .our-feature-section .flex-box .icon {
+          flex-basis: 100% !important;
+          margin: 0 auto 8px !important;
+        }
+      
+        .our-feature-section .flex-box .icon img,
+        .our-feature-section .flex-container .icon img {
+          width: 40px !important;
+          height: 40px !important;
+          object-fit: contain !important;
+          display: block !important;
+          margin: 0 auto 8px !important;
+        }
+      
+        .our-feature-section .flex-box .text h3,
+        .our-feature-section .flex-box h3 {
+          font-size: 16px !important;
+          line-height: 20px !important;
+          margin-bottom: 6px !important;
+        }
+      
+        .our-feature-section .flex-box .text p,
+        .our-feature-section .flex-box p {
+          font-size: 13px !important;
+          line-height: 18px !important;
+          margin: 0 !important;
+          color: #444 !important;
+        }
+      }
+
+      
