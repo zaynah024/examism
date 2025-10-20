@@ -8,12 +8,12 @@
   text-decoration: none;
   display: inline-block;
   border: 2px solid #cf3da6;
+
 }
 .pink-btn:hover {
   border: 2px solid #cf3da6;
   color: #cf3da6;
-  background: transparent;
-  text-decoration: none;
+  
 }
 .header .navbar-nav .nav-link:hover {
   color: #cf3da6 !important;
@@ -2335,7 +2335,7 @@ footer
         .custom-footer .subscribe-col .input-group { max-width: 520px; }
       }
 
-
+      
       /* our-feature-section — smaller sizes and 2-per-row on mobile */
       @media (max-width: 767.98px) {
         .our-feature-section .flex-container {
